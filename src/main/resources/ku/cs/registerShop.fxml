@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ku.cs.shop.controllers.RegisterShopController">
+   <children>
+      <VBox prefHeight="600.0" prefWidth="250.0" style="-fx-background-color: #663399;">
+         <children>
+            <Pane prefHeight="100.0" prefWidth="274.0">
+               <children>
+                  <Label layoutX="41.0" layoutY="24.0" text="2LP SHOP" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="36.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+            <Button mnemonicParsing="false" onAction="#handleHomeButton" prefHeight="60.0" prefWidth="266.0" style="-fx-background-color: #663399;" text="กลับสู่หน้าหลัก" textFill="WHITE">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Button>
+            <Pane prefHeight="373.0" prefWidth="250.0" />
+            <Button mnemonicParsing="false" onAction="#handleLogoutButton" prefHeight="60.0" prefWidth="266.0" style="-fx-background-color: #663399;" text="ออกจากระบบ" textFill="WHITE">
+               <font>
+                  <Font size="18.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+         </children>
+      </VBox>
+      <HBox alignment="CENTER_RIGHT" layoutX="250.0" prefHeight="86.0" prefWidth="750.0" style="-fx-background-color: #663399;" />
+      <Pane layoutX="416.0" layoutY="196.0" prefHeight="328.0" prefWidth="383.0" style="-fx-background-color: #663399;">
+         <children>
+            <TextField fx:id="shopNameTextField" layoutX="48.0" layoutY="76.0" prefHeight="33.0" prefWidth="289.0" />
+            <Label layoutX="47.0" layoutY="40.0" text="ระบุชื่อร้านค้าของคุณ" textFill="#f5f3f3">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Button layoutX="164.0" layoutY="228.0" mnemonicParsing="false" onAction="#handleShopButton" prefHeight="33.0" prefWidth="58.0" text="ยืนยัน">
+               <font>
+                  <Font size="14.0" />
+               </font></Button>
+            <Label fx:id="AlertLabel" alignment="CENTER" layoutX="119.0" layoutY="150.0" prefHeight="29.0" prefWidth="143.0" text="มีร้านค้าชื่อนี้อยู่แล้ว" textFill="#fffb00">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <Label layoutX="476.0" layoutY="123.0" text="สร้างร้านค้าของคุณ">
+         <font>
+            <Font size="36.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

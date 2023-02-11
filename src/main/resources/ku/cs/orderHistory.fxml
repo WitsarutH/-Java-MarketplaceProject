@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="600.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ku.cs.shop.controllers.OrderHistoryController">
+   <children>
+      <Pane prefHeight="600.0" prefWidth="250.0" style="-fx-background-color: #663399;">
+         <children>
+            <Button layoutX="76.0" layoutY="119.0" mnemonicParsing="false" onAction="#handleBackButton" prefHeight="39.0" prefWidth="99.0" style="-fx-background-color: #663399;" text="ย้อนกลับ" textFill="WHITE">
+               <font>
+                  <Font size="18.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor></Button>
+         </children></Pane>
+      <Pane layoutX="250.0" prefHeight="86.0" prefWidth="750.0" style="-fx-background-color: #663399;">
+         <children>
+            <ImageView fx:id="profileImage" fitHeight="50.0" fitWidth="50.0" layoutX="680.0" layoutY="19.0" pickOnBounds="true" preserveRatio="true" />
+            <Label fx:id="nameLabel" alignment="CENTER_RIGHT" contentDisplay="RIGHT" layoutX="440.0" layoutY="28.0" prefHeight="31.0" prefWidth="224.0" text="nameLabel" textFill="#7bb4ff">
+               <font>
+                  <Font size="21.0" />
+               </font>
+            </Label>
+         </children></Pane>
+      <Label layoutX="41.0" layoutY="24.0" text="2LP SHOP" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="36.0" />
+         </font></Label>
+      <ScrollPane layoutX="258.0" layoutY="130.0" prefHeight="464.0" prefWidth="734.0">
+         <content>
+            <GridPane fx:id="grid" prefHeight="450.0" prefWidth="718.0">
+              <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+              </columnConstraints>
+              <rowConstraints>
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+            </GridPane>
+         </content>
+      </ScrollPane>
+      <Label layoutX="310.0" layoutY="97.0" text="เวลาที่สั่งซื้อ">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="442.0" layoutY="97.0" text="ภาพสินค้า">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="606.0" layoutY="97.0" text="ชื้อสินค้า">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="707.0" layoutY="97.0" text="จำนวนที่สั่งซื้อ">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="851.0" layoutY="97.0" text="ราคารวม">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="noHistoryAlertLabel" layoutX="545.0" layoutY="335.0" text="ไม่มีประวัติการสั่งซื้อ" textFill="RED">
+         <font>
+            <Font size="24.0" />
+         </font></Label>
+   </children>
+</AnchorPane>

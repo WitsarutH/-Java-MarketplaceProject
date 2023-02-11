@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="600.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ku.cs.shop.controllers.EditProductController">
+    <children>
+        <Label layoutX="385.0" layoutY="4.0" text="แก้ไขข้อมูลสินค้า">
+            <font>
+                <Font size="36.0" />
+            </font>
+        </Label>
+        <ImageView fx:id="productImage" fitHeight="150.0" fitWidth="150.0" layoutX="425.0" layoutY="68.0" pickOnBounds="true" preserveRatio="true" />
+        <Button layoutX="458.0" layoutY="227.0" mnemonicParsing="false" onAction="#handleChangeImage" text="เปลี่ยนรูปสินค้า" />
+        <Label layoutX="289.0" layoutY="285.0" text="ชื่อสินค้า :">
+            <font>
+                <Font size="18.0" />
+            </font>
+        </Label>
+        <TextField fx:id="productNameTextField" layoutX="385.0" layoutY="286.0" prefHeight="25.0" prefWidth="233.0" promptText="ใส่ชื่อสินค้า" />
+        <Label layoutX="234.0" layoutY="324.0" text="รายละเอียดสินค้า :">
+            <font>
+                <Font size="18.0" />
+            </font>
+        </Label>
+        <Label layoutX="273.0" layoutY="442.0" text="ราคาสินค้า :">
+            <font>
+                <Font size="18.0" />
+            </font></Label>
+        <TextField fx:id="productPriceTextField" layoutX="385.0" layoutY="446.0" prefHeight="25.0" prefWidth="174.0" promptText="ใส่ราคาสินค้า" />
+        <Label layoutX="574.0" layoutY="444.0" text="(บาท)">
+            <font>
+                <Font size="18.0" />
+            </font>
+        </Label>
+        <Button layoutX="450.0" layoutY="525.0" mnemonicParsing="false" onAction="#handleEditProduct" text="แก้ไขสินค้า">
+            <font>
+                <Font size="18.0" />
+            </font>
+        </Button>
+        <Button layoutX="14.0" layoutY="14.0" mnemonicParsing="false" onAction="#handleBackButton" text="ย้อนกลับ" />
+        <Label fx:id="alertLabel" layoutX="565.0" layoutY="534.0" prefHeight="20.0" prefWidth="354.0" text="AlertLabel" textFill="#f24141">
+            <font>
+                <Font size="14.0" />
+            </font>
+        </Label>
+        <TextArea fx:id="productDetailTextArea" layoutX="385.0" layoutY="324.0" prefHeight="111.0" prefWidth="233.0" promptText="ใส่รายละเอียดสินค้า" />
+    </children>
+</AnchorPane>

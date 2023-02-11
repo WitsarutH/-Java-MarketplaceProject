@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="125.0" prefWidth="672.0" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ku.cs.shop.controllers.OrderController">
+   <children>
+      <Label fx:id="timeLabel" alignment="CENTER" layoutX="-6.0" layoutY="49.0" prefHeight="27.0" prefWidth="161.0" text="timeLabel">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <ImageView fx:id="imageView" fitHeight="100.0" fitWidth="100.0" layoutX="172.0" layoutY="13.0" pickOnBounds="true" preserveRatio="true" />
+      <Label fx:id="productNameLabel" alignment="CENTER" layoutX="288.0" layoutY="1.0" prefHeight="118.0" prefWidth="153.0" text="ProductNameLabel">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label fx:id="amountLabel" alignment="CENTER" layoutX="445.0" layoutY="49.0" prefHeight="27.0" prefWidth="80.0" text="AmountLabel">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="priceLabel" alignment="CENTER" layoutX="519.0" layoutY="49.0" prefHeight="27.0" prefWidth="153.0" text="PriceLabel" textFill="#49bf22">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

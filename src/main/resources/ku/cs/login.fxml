@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="600.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ku.cs.shop.controllers.LoginController">
+   <children>
+      <Pane layoutX="269.0" layoutY="164.0" prefHeight="318.0" prefWidth="463.0" style="-fx-background-color: #663399;">
+         <children>
+            <TextField fx:id="usernameTextField" layoutX="94.0" layoutY="96.0" prefHeight="25.0" prefWidth="258.0" promptText="Please enter your username" />
+            <PasswordField fx:id="passwordField" layoutX="95.0" layoutY="172.0" prefHeight="25.0" prefWidth="258.0" promptText="Please enter your password" />
+            <Label layoutX="95.0" layoutY="69.0" text="ชื่อสำหรับเข้าสู่ระบบ" textFill="WHITE">
+               <font>
+                  <Font size="18.0" />
+               </font></Label>
+            <Label layoutX="95.0" layoutY="146.0" text="รหัสผ่าน" textFill="#fcf6f6">
+               <font>
+                  <Font size="18.0" />
+               </font></Label>
+            <Button layoutX="192.0" layoutY="235.0" mnemonicParsing="false" onAction="#handleLoginButton" text="เข้าสู่ระบบ">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Button layoutX="361.0" layoutY="285.0" mnemonicParsing="false" onAction="#handleRegisterButton" prefHeight="25.0" prefWidth="77.0" style="-fx-background-color: #663399;" text="สมัครสมาชิก" textFill="#79b0e0">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Label layoutX="306.0" layoutY="289.0" text="สมาชิกใหม่?" textFill="WHITE" />
+            <Label layoutX="435.0" layoutY="290.0" text="ที่นี่" textFill="WHITE" />
+            <Label fx:id="loginAlertTextLabel" alignment="CENTER" layoutX="106.0" layoutY="205.0" prefHeight="21.0" prefWidth="234.0" text="loginAlertTextLabel" textFill="#fffb00">
+               <font>
+                  <Font size="15.0" />
+               </font>
+               <effect>
+                  <Glow level="0.4" />
+               </effect>
+            </Label>
+         </children></Pane>
+      <Label layoutX="188.0" layoutY="46.0" text="ยินดีต้อนรับสู่ร้าน 2LP shop! กรุณาเข้าสู่ระบบ">
+         <font>
+            <Font size="36.0" />
+         </font>
+      </Label>
+      <Button layoutX="14.0" layoutY="14.0" mnemonicParsing="false" onAction="#handleWelcomeButton" text="กลับหน้าแรก">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Button>
+   </children>
+</AnchorPane>

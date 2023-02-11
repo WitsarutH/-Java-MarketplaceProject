@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="125.0" prefWidth="672.0" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ku.cs.shop.controllers.MarketController">
+    <children>
+        <VBox alignment="CENTER" prefHeight="118.0" prefWidth="650.0" AnchorPane.bottomAnchor="7.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="-50.0" AnchorPane.topAnchor="0.0">
+            <children>
+                <HBox prefHeight="118.0" prefWidth="685.0">
+                    <children>
+                        <Label fx:id="nameLabel" alignment="CENTER" prefHeight="115.0" prefWidth="125.0" text="nameItem">
+                            <font>
+                                <Font name="Cambria" size="18.0" />
+                            </font>
+                        </Label>
+                        <ImageView fx:id="imgSrc" fitHeight="110.0" fitWidth="110.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@image/banana.png" />
+                            </image>
+                        </ImageView>
+                  <Pane prefHeight="118.0" prefWidth="21.0" />
+                        <Label fx:id="price" prefHeight="118.0" prefWidth="99.0" text="price">
+                            <font>
+                                <Font name="Cambria Bold" size="14.0" />
+                            </font>
+                        </Label>
+                  <Label prefHeight="118.0" prefWidth="63.0" text="เหลือสินค้า :" />
+                        <Label fx:id="amountLabel" prefHeight="118.0" prefWidth="78.0" text="amount">
+                            <font>
+                                <Font size="19.0" />
+                            </font>
+                        </Label>
+                        <HBox alignment="CENTER" prefHeight="118.0" prefWidth="171.0">
+                            <children>
+                        <Pane prefHeight="200.0" prefWidth="200.0">
+                           <children>
+                                      <Button fx:id="addAmountButton" layoutX="12.0" layoutY="9.0" mnemonicParsing="false" onAction="#handleAddProductAmount" prefHeight="44.0" prefWidth="148.0" stylesheets="@css/button.css" text="เพิ่มจำนวนสินค้า" />
+                              <TextField fx:id="addAmountTextField" layoutX="11.0" layoutY="37.0" promptText="ใส่จำนวนสินค้าที่ต้องการเพิ่ม" />
+                              <Button fx:id="cancelButton" layoutX="14.0" layoutY="80.0" mnemonicParsing="false" onAction="#handleCancelButton" text="ยกเลิก" />
+                              <Button fx:id="confirmButton" layoutX="105.0" layoutY="80.0" mnemonicParsing="false" onAction="#handleConfirmButton" text="ยืนยัน" />
+                              <Label fx:id="alertLabel" alignment="CENTER" layoutX="11.0" layoutY="61.0" prefHeight="20.0" prefWidth="148.0" text="alertText" textFill="#f22727">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                                 <cursor>
+                                    <Cursor fx:constant="HAND" />
+                                 </cursor>
+                              </Label>
+                              <Label fx:id="guideLabel" layoutX="10.0" layoutY="13.0" text="ใส่จำนวนสินค้าที่ต้องการเพิ่ม">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </Label>
+                              <Button fx:id="editProductButton" contentDisplay="CENTER" layoutX="14.0" layoutY="69.0" mnemonicParsing="false" onAction="#handleEditProductButton" stylesheets="@css/button.css" text="แก้ไขข้อมูลสินค้า" />
+                           </children>
+                        </Pane>
+                            </children>
+                        </HBox>
+                    </children>
+                    <VBox.margin>
+                        <Insets left="5.0" />
+                    </VBox.margin>
+                </HBox>
+            </children>
+        </VBox>
+      <Separator layoutX="-4.0" layoutY="111.0" prefHeight="13.0" prefWidth="678.0" />
+    </children>
+</AnchorPane>

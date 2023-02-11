@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ku.cs.shop.controllers.DeveloperController">
+   <children>
+      <Label layoutX="567.0" layoutY="67.0" text="ชื่อ: วิศรุต หอมแก่นจันทร์">
+         <font>
+            <Font size="18.0" />
+         </font></Label>
+      <Label layoutX="567.0" layoutY="98.0" text="ชื่อเล่น: ลักกี้">
+         <font>
+            <Font size="18.0" />
+         </font></Label>
+      <Label layoutX="566.0" layoutY="129.0" text="รหัสนิสิต: 6310401165">
+         <font>
+            <Font size="18.0" />
+         </font></Label>
+      <Label layoutX="559.0" layoutY="242.0" text="ชื่อ: ภูมิรัฐ เลิบไสง">
+         <font>
+            <Font size="18.0" />
+         </font></Label>
+      <Label layoutX="559.0" layoutY="310.0" text="รหัสนิสิต: 6310401106">
+         <font>
+            <Font size="18.0" />
+         </font></Label>
+      <Label layoutX="559.0" layoutY="277.0" text="ชื่อเล่น: ลีวายส์">
+         <font>
+            <Font size="18.0" />
+         </font></Label>
+      <Label layoutX="559.0" layoutY="421.0" text="ชื่อ: ศิวกร แพทย์เสลา">
+         <font>
+            <Font size="18.0" />
+         </font></Label>
+      <Label layoutX="559.0" layoutY="493.0" text="รหัสนิสิต: 6310401998">
+         <font>
+            <Font size="18.0" />
+         </font></Label>
+      <Label layoutX="559.0" layoutY="458.0" text="ชื่อเล่น: เพียว">
+         <font>
+            <Font size="18.0" />
+         </font></Label>
+      <ImageView fx:id="lucky" fitHeight="150.0" fitWidth="200.0" layoutX="302.0" layoutY="36.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@image/lucky.jpg" />
+         </image></ImageView>
+      <ImageView fx:id="levis" fitHeight="150.0" fitWidth="200.0" layoutX="300.0" layoutY="215.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@image/levis.jpg" />
+         </image></ImageView>
+      <ImageView fx:id="pure" fitHeight="150.0" fitWidth="200.0" layoutX="276.0" layoutY="396.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@image/pure.jpg" />
+         </image></ImageView>
+      <Button layoutX="14.0" layoutY="14.0" mnemonicParsing="false" onAction="#HandleWelcomeButton" prefHeight="25.0" prefWidth="74.0" text="กลับหน้าแรก">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+   </children>
+</AnchorPane>

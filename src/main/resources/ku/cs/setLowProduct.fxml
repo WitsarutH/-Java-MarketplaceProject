@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ku.cs.shop.controllers.SetLowProductController">
+   <children>
+      <VBox prefHeight="600.0" prefWidth="250.0" style="-fx-background-color: #663399;">
+         <children>
+            <Pane prefHeight="100.0" prefWidth="274.0">
+               <children>
+                  <Label layoutX="41.0" layoutY="24.0" text="2LP SHOP" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="36.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+            <Button mnemonicParsing="false" onAction="#handleBackButton" prefHeight="60.0" prefWidth="266.0" style="-fx-background-color: #663399;" text="ย้อนกลับ" textFill="WHITE">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Button>
+            <Pane prefHeight="380.0" prefWidth="250.0" />
+         </children>
+      </VBox>
+      <HBox alignment="CENTER_RIGHT" layoutX="250.0" prefHeight="86.0" prefWidth="750.0" style="-fx-background-color: #663399;" />
+      <Label layoutX="288.0" layoutY="135.0" text="กำหนดจำนวนเพื่อแจ้งเตือนเมื่อสินค้าเหลือน้อย :">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <TextField fx:id="setLowProductTextField" layoutX="643.0" layoutY="136.0" prefHeight="25.0" prefWidth="168.0" />
+      <Button layoutX="861.0" layoutY="136.0" mnemonicParsing="false" onAction="#handleSetLowProductButton" text="ยืนยัน" />
+      <Label fx:id="alertLabel" layoutX="642.0" layoutY="171.0" prefHeight="35.0" prefWidth="344.0" text="alertLabel" textFill="#ee0707">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="amountLabel" alignment="CENTER_RIGHT" layoutX="337.0" layoutY="171.0" prefHeight="20.0" prefWidth="269.0" text="( จำนวนปัจจุบัน =  ...  ชิ้น )" textFill="#1ca3d3">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

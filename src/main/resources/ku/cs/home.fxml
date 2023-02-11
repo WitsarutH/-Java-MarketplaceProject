@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ku.cs.shop.controllers.HomeController">
+   <children>
+      <VBox prefHeight="600.0" prefWidth="250.0" style="-fx-background-color: #663399;">
+         <children>
+            <Pane prefHeight="100.0" prefWidth="274.0">
+               <children>
+                  <Label layoutX="41.0" layoutY="24.0" text="2LP SHOP" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="36.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+            <Button mnemonicParsing="false" onAction="#handleProfileButton" prefHeight="60.0" prefWidth="266.0" style="-fx-background-color: #663399;" text="ตั้งค่าบัญชี" textFill="WHITE">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <font>
+                  <Font size="18.0" />
+               </font></Button>
+            <Button fx:id="shopButton" mnemonicParsing="false" onAction="#handleShopButton" prefHeight="60.0" prefWidth="266.0" style="-fx-background-color: #663399;" text="ร้านค้าของฉัน" textFill="WHITE">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Button>
+            <Button fx:id="historyButton" mnemonicParsing="false" onAction="#handleOrderHistoryButton" prefHeight="65.0" prefWidth="250.0" style="-fx-background-color: #663399;" text="ประวัติการซื้อ" textFill="WHITE">
+               <font>
+                  <Font size="18.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Pane prefHeight="191.0" prefWidth="250.0" />
+            <Button fx:id="adminButton" mnemonicParsing="false" onAction="#handleAdminButton" prefHeight="60.0" prefWidth="250.0" style="-fx-background-color: #663399;" text="เมนูสำหรับผู้ดูแลระบบ" textFill="#fffb00">
+               <font>
+                  <Font size="18.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Button mnemonicParsing="false" onAction="#handleLogoutButton" prefHeight="60.0" prefWidth="266.0" style="-fx-background-color: #663399;" text="ออกจากระบบ" textFill="WHITE">
+               <font>
+                  <Font size="18.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+         </children>
+      </VBox>
+      <HBox alignment="CENTER_RIGHT" layoutX="250.0" prefHeight="86.0" prefWidth="750.0" style="-fx-background-color: #663399;">
+         <children>
+            <Label fx:id="nameLabel" alignment="CENTER_RIGHT" prefHeight="43.0" prefWidth="218.0" text="nameLabel" textFill="#7bb4ff">
+               <font>
+                  <Font size="21.0" />
+               </font>
+            </Label>
+            <Pane prefHeight="86.0" prefWidth="16.0" />
+            <ImageView fx:id="profileImage" fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true" />
+            <Pane prefHeight="86.0" prefWidth="20.0" />
+         </children>
+      </HBox>
+      <HBox alignment="CENTER" layoutX="250.0" layoutY="123.0" prefHeight="478.0" prefWidth="750.0">
+         <children>
+            <ScrollPane fx:id="scroll" prefHeight="505.0" prefWidth="718.0">
+               <HBox.margin>
+                  <Insets top="10.0" />
+               </HBox.margin>
+               <content>
+                  <GridPane fx:id="grid" prefHeight="503.0" prefWidth="716.0">
+                    <rowConstraints>
+                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                    </rowConstraints>
+                     <columnConstraints>
+                        <ColumnConstraints />
+                     </columnConstraints>
+                  </GridPane>
+               </content>
+            </ScrollPane>
+         </children>
+      </HBox>
+      <ChoiceBox fx:id="choiceBox" layoutX="836.0" layoutY="98.0" prefWidth="150.0" />
+      <Label layoutX="754.0" layoutY="102.0" text="เรียงสินค้าตาม :" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="600.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ku.cs.shop.controllers.ProfileController">
+   <children>
+      <Pane prefHeight="600.0" prefWidth="250.0" style="-fx-background-color: #663399;">
+         <children>
+            <Label layoutX="41.0" layoutY="24.0" text="2LP SHOP" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="36.0" />
+               </font>
+            </Label>
+            <Button layoutY="541.0" mnemonicParsing="false" onAction="#handleLogoutButton" prefHeight="39.0" prefWidth="250.0" style="-fx-background-color: #663399;" text="ออกจากระบบ" textFill="WHITE">
+               <font>
+                  <Font size="18.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Button layoutY="118.0" mnemonicParsing="false" onAction="#handleHomeButton" prefHeight="39.0" prefWidth="250.0" style="-fx-background-color: #663399;" text="หน้าหลัก" textFill="WHITE">
+               <font>
+                  <Font size="18.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+         </children>
+      </Pane>
+      <ImageView fx:id="profileImage" fitHeight="150.0" fitWidth="150.0" layoutX="560.0" layoutY="14.0" pickOnBounds="true" />
+      <Label layoutX="525.0" layoutY="234.0" text="ชื่อ :">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Button layoutX="585.0" layoutY="171.0" mnemonicParsing="false" onAction="#handleInputImageButton" text="(เปลี่ยนรูปโปรไฟล์)" textFill="#1e90e8">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Label fx:id="nameLabel" layoutX="591.0" layoutY="234.0" prefHeight="35.0" prefWidth="270.0" text="nameLabel">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="358.0" layoutY="297.0" text="ชื่อสำหรับเข้าสู่ระบบบ :">
+         <font>
+            <Font size="24.0" />
+         </font></Label>
+      <Label fx:id="usernameLabel" layoutX="591.0" layoutY="298.0" prefHeight="35.0" prefWidth="283.0" text="usernameLabel">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="490.0" layoutY="361.0" text="ร้านค้า :">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Label fx:id="shopNameLabel" layoutX="591.0" layoutY="361.0" prefHeight="35.0" prefWidth="256.0" text="shopNameLabel">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="489.0" layoutY="424.0" text="สถานะ :">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Label fx:id="roleLabel" layoutX="591.0" layoutY="424.0" text="roleLabel">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="471.0" layoutY="486.0" text="รหัสผ่าน :">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Button fx:id="changePasswordBtn" layoutX="590.0" layoutY="489.0" mnemonicParsing="false" onAction="#handleChangePasswordMenu" text="เปลี่ยนรหัสผ่าน" textFill="#1e90e8" underline="true">
+         <font>
+            <Font size="14.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <PasswordField fx:id="newPassword" layoutX="591.0" layoutY="492.0" promptText="ใส่รหัสผ่านใหม่" />
+      <PasswordField fx:id="confirmNewPassword" layoutX="591.0" layoutY="541.0" promptText="ยืนยันรหัสผ่านใหม่" />
+      <Button fx:id="cancelBtn" layoutX="758.0" layoutY="541.0" mnemonicParsing="false" onAction="#handleCancelButton" text="ยกเลิก" textFill="#e43333" />
+      <Button fx:id="confirmChangePasswordBtn" layoutX="828.0" layoutY="541.0" mnemonicParsing="false" onAction="#handleChangePasswordButton" text="เปลี่ยนรหัสผ่าน" textFill="#1e90e8" />
+      <Label fx:id="alertLabel" alignment="CENTER" layoutX="755.0" layoutY="495.0" prefHeight="17.0" prefWidth="158.0" text="aleartLabel" textFill="#f24141">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Button fx:id="resetToDefaultBtn" layoutX="610.0" layoutY="199.0" mnemonicParsing="false" onAction="#handleDefaultImage" text="รูปเริ่มต้น" textFill="#f20303">
+         <font>
+            <Font size="10.0" />
+         </font></Button>
+   </children>
+</AnchorPane>

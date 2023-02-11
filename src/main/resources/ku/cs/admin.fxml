@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="600.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ku.cs.shop.controllers.AdminController">
+   <children>
+      <ListView fx:id="memberListView" layoutX="116.0" layoutY="65.0" prefHeight="488.0" prefWidth="288.0" />
+      <Label layoutX="170.0" layoutY="22.0" text="รายชื่อผู้ใช้งานระบบ">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Button layoutX="14.0" layoutY="14.0" mnemonicParsing="false" onAction="#handleBackButton" text="ย้อนกลับ" />
+      <Separator layoutX="497.0" orientation="VERTICAL" prefHeight="600.0" prefWidth="0.0" />
+      <Label layoutX="680.0" layoutY="22.0" text="รายละเอียดของผู้ใช้">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="581.0" layoutY="238.0" text="Username :">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label fx:id="usernameLabel" layoutX="732.0" layoutY="239.0" prefHeight="27.0" prefWidth="158.0" text="usernameLabel" textFill="#27a5ff">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <ImageView fx:id="profileImage" fitHeight="150.0" fitWidth="150.0" layoutX="695.0" layoutY="69.0" pickOnBounds="true" preserveRatio="true" />
+      <Label layoutX="647.0" layoutY="292.0" text="ชื่อ :">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label fx:id="nameLabel" layoutX="732.0" layoutY="293.0" prefHeight="27.0" prefWidth="158.0" text="nameLabel" textFill="#27a5ff">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="620.0" layoutY="346.0" prefHeight="30.0" prefWidth="60.0" text="ร้านค้า :">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label fx:id="shopLabel" layoutX="732.0" layoutY="348.0" prefHeight="27.0" prefWidth="158.0" text="shopLabel" textFill="#27a5ff">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="620.0" layoutY="404.0" text="สถานะ :">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label fx:id="roleLabel" layoutX="732.0" layoutY="406.0" prefHeight="27.0" prefWidth="158.0" text="roleLabel" textFill="#f22b2b">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="554.0" layoutY="464.0" text="เข้าใช้งานล่าสุด :">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label fx:id="timeLabel" layoutX="729.0" layoutY="466.0" text="timeLabel" textFill="#27a5ff">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

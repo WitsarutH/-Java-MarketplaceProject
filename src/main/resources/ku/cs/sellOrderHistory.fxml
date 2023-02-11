@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ku.cs.shop.controllers.SellOrderHistoryController">
+   <children>
+      <VBox prefHeight="600.0" prefWidth="250.0" style="-fx-background-color: #663399;">
+         <children>
+            <Pane prefHeight="100.0" prefWidth="274.0">
+               <children>
+                  <Label layoutX="41.0" layoutY="24.0" text="2LP SHOP" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="36.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+            <Button mnemonicParsing="false" onAction="#handleBackButton" prefHeight="60.0" prefWidth="266.0" style="-fx-background-color: #663399;" text="ย้อนกลับ" textFill="WHITE">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Button>
+            <Pane prefHeight="380.0" prefWidth="250.0" />
+         </children>
+      </VBox>
+      <HBox alignment="CENTER_RIGHT" layoutX="250.0" prefHeight="86.0" prefWidth="750.0" style="-fx-background-color: #663399;">
+         <children>
+            <Label prefHeight="27.0" prefWidth="36.0" text="ร้าน" textFill="#eeeeee">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label fx:id="shopNameLabel" prefHeight="43.0" prefWidth="214.0" text="shopNameLabel" textFill="#1be1e4">
+               <font>
+                  <Font size="21.0" />
+               </font>
+            </Label>
+         </children></HBox>
+      <ScrollPane layoutX="256.0" layoutY="136.0" prefHeight="458.0" prefWidth="736.0">
+         <content>
+            <GridPane fx:id="grid" prefHeight="163.0" prefWidth="257.0">
+              <rowConstraints>
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+            </GridPane>
+         </content>
+      </ScrollPane>
+      <Label layoutX="286.0" layoutY="85.0" text="เวลาที่ขายสินค้า /">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="321.0" layoutY="111.0" text="ชื่อผู้ซื้อ">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="455.0" layoutY="100.0" text="ภาพสินค้า">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="598.0" layoutY="100.0" text="ชื่อสินค้า">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="722.0" layoutY="100.0" text="จำนวนสินค้า">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="850.0" layoutY="100.0" text="ราคารวม">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

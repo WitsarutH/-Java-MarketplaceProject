@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ku.cs.shop.controllers.InstructionController">
+   <children>
+      <Label layoutX="261.0" layoutY="573.0" text="อ่านรายละเอียดการใช้งานโปรแกรมเพิ่มเติมได้ที่ไฟล์ รายละเอียดการใช้งานโปรแกรม LuckyPureLevi Shop.pdf" textFill="#eb0101">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Button layoutX="14.0" layoutY="14.0" mnemonicParsing="false" onAction="#HandleWelcomeButton" text="กลับหน้าแรก" />
+      <Label layoutX="265.0" layoutY="14.0" text="คำแนะนำการใช้งานโปรแกรม LuckyPureLevi Shop">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <ScrollPane layoutX="156.0" layoutY="57.0" prefHeight="509.0" prefWidth="747.0">
+         <content>
+            <ImageView fx:id="instruction" fitHeight="1034.0" fitWidth="847.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@image/instruction.jpg" />
+               </image>
+            </ImageView>
+         </content>
+      </ScrollPane>
+   </children>
+</AnchorPane>
